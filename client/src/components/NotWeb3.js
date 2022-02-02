@@ -9,16 +9,16 @@ class NotWeb3 extends Component {
       <div className="App">
         <h1>Welcome to KaushCoin!</h1>
         <Typography align="center" style={{color: 'red', marginLeft: '3vw', marginRight: '3vw', marginBottom: '20px'}}>
-          Please login to your Web3 wallet (such as MetaMask) and connect your account on the Ethereum Rinkeby Test Network to use the faucet.
+          Please login to your Web3 wallet (such as MetaMask) and connect your account on the Binance Smart Chain TestNet to use the faucet.
         </Typography>
         <Typography align="center" style={{marginLeft: '3vw', marginRight: '3vw', marginBottom: '20px'}}>
-          KaushCoin (KSH) is an ERC-20 Token on the Ethereum Rinkeby Test Network.
+          KaushCoin (KSH) is a BEP-20 Token on the Binance Smart Chain TestNet.
         </Typography>
         <div>
           <TextField
            id="read-only-smart-contract-address"
            label="Smart Contract Address (Read Only)"
-           defaultValue="0x5d980be513a94D790beF385f4fE250d219ed5b4E"
+           defaultValue="0xd67BaA74ee923970adD1D63F76dAa1f1C70A4114"
            InputProps={{
              readOnly: true,
            }}
@@ -52,10 +52,10 @@ class NotWeb3 extends Component {
 
        <Button size="small" variant="contained" disableElevation
            style={{marginLeft: '3vw', marginRight: '3vw', marginBottom: '20px'}}
-           href={`https://rinkeby.etherscan.io/token/0x5d980be513a94D790beF385f4fE250d219ed5b4E`}
+           href={`https://testnet.bscscan.com/address/0xd67BaA74ee923970adD1D63F76dAa1f1C70A4114`}
            target="_blank"
        >
-        View in Etherscan
+        View in BscScan
         <OpenInNewIcon fontSize="small"/>
        </Button>
 

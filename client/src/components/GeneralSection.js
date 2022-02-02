@@ -16,7 +16,7 @@ class GeneralSection extends Component {
     return (
       <div>
         <Typography align="center" style={{marginLeft: '3vw', marginRight: '3vw', marginBottom: '20px'}}>
-          KaushCoin (KSH) is an ERC-20 Token on the Ethereum Rinkeby Test Network.
+          KaushCoin (KSH) is a BEP-20 Token on the Binance Smart Chain TestNet.
         </Typography>
         <div>
           <TextField
@@ -55,7 +55,7 @@ class GeneralSection extends Component {
          id="read-only-token-total-supply"
          label="Token Total Supply (Read Only)"
          defaultValue={(this.props.totalSupply/Math.pow(10,18)).toLocaleString()}
-         helperText="This is the current total supply of KSH in existence."
+         helperText="This is the current total supply of BKSH in existence."
          InputProps={{
            readOnly: true,
          }}
@@ -66,7 +66,7 @@ class GeneralSection extends Component {
          id="read-only-token-decimals"
          label="Token Decimals (Read Only)"
          defaultValue={this.props.decimals}
-         helperText={`KSH can have upto 18 decimal places.`}
+         helperText={`BKSH can have upto 18 decimal places.`}
          InputProps={{
            readOnly: true,
          }}
@@ -76,10 +76,10 @@ class GeneralSection extends Component {
 
        <Button size="small" variant="contained" disableElevation
            style={{marginLeft: '3vw', marginRight: '3vw', marginBottom: '20px'}}
-           href={`https://rinkeby.etherscan.io/token/${this.props.contractAddress}`}
+           href={`https://testnet.bscscan.com/address/${this.props.contractAddress}`}
            target="_blank"
        >
-        View in Etherscan
+        View in BscScan
         <OpenInNewIcon fontSize="small"/>
        </Button>
 
