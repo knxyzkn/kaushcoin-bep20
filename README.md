@@ -20,7 +20,7 @@ Note: Effort has been made to communicate the above through the Dapp UI with des
 
 ## KaushCoin Links
 
-Faucet: https://kaushcoin.vercel.app/
+Faucet: https://kaushcoin-bep20.vercel.app/
 
 Smart Contract Address: `0xd67BaA74ee923970adD1D63F76dAa1f1C70A4114`
 
